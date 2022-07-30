@@ -1,0 +1,1 @@
+This is a little project to test some functionalities of the react and to pratice my abilities with animation
