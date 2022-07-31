@@ -1,4 +1,4 @@
-// import {ItemList} from "../ItemList/"
+import {ItemList} from "../ItemList/"
 import "./style.css"
 export function Menu(){
     function verify(e){
@@ -12,15 +12,12 @@ export function Menu(){
     }
     return (
         <ul>
-            <li onClick={(e) => verify(e)}>Home</li>
-            <li onClick={(e) => verify(e)}>About</li>
-            <li onClick={(e) => verify(e)}>Works</li>
-            <li onClick={(e) => verify(e)}>Contact</li>
+            <ItemList anchor="" content="Home" func={(e) => verify(e)}/>
+            <ItemList anchor="" content="About" func={(e) => verify(e)}/>
+            <ItemList anchor="" content="Works" func={(e) => verify(e)}/>
+            <ItemList anchor="" content="Contact" func={(e) => verify(e)}/>
         </ul>
     )
 }
 
 
-{/* <ItemList anchor="" content="About" onClick={verify}/>
-<ItemList anchor="" content="Works" onClick={verify}/>
-<ItemList anchor="" content="Contact" onClick={verify}/> */}
