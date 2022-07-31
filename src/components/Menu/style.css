@@ -1,0 +1,32 @@
+ul{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 50px auto;
+    align-items: baseline;
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li a{
+    text-transform: uppercase;
+    transition: .5s;
+}
+ul li a:hover{
+    font-weight: 500;
+}
+ul li.focus::after{
+    content: "";
+    display: block;
+    width: 85%;
+    height: 3.5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1BFFB6, #B61BFF);
+    margin: 5px auto;
+}
