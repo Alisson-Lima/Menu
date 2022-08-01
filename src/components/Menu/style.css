@@ -12,16 +12,13 @@ ul{
 ul li{
     list-style: none;
     cursor: pointer;
-}
-
-ul li a{
     text-transform: uppercase;
     transition: .5s;
 }
-ul li a:hover{
+ul li:hover{
     font-weight: 500;
 }
-ul li.focus::after{
+ul li a.focus::after{
     content: "";
     display: block;
     width: 85%;

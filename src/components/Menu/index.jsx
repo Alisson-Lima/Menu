@@ -12,10 +12,10 @@ export function Menu(){
     }
     return (
         <ul>
-            <ItemList anchor="" content="Home" func={(e) => verify(e)}/>
-            <ItemList anchor="" content="About" func={(e) => verify(e)}/>
-            <ItemList anchor="" content="Works" func={(e) => verify(e)}/>
-            <ItemList anchor="" content="Contact" func={(e) => verify(e)}/>
+            <ItemList inicialFocus="focus" content="Home" func={(e) => verify(e)}/>
+            <ItemList content="About" func={(e) => verify(e)}/>
+            <ItemList content="Works" func={(e) => verify(e)}/>
+            <ItemList content="Contact" func={(e) => verify(e)}/>
         </ul>
     )
 }
