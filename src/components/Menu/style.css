@@ -1,4 +1,4 @@
-ul{
+ul .links{
     display: flex;
     width: 100%;
     max-width: 500px;
@@ -9,19 +9,31 @@ ul{
     align-items: baseline;
 }
 
-ul li{
+ul .links li{
     list-style: none;
     cursor: pointer;
     text-transform: uppercase;
     transition: .5s;
 }
-ul li:hover{
+
+ul .focus-bar{
+    display: block;
+    height: 3.5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #1BFFB6, #B61BFF);
+    margin: 5px auto;
+}
+
+ul .links li:hover{
     font-weight: 500;
 }
-ul li a.focus::after{
+ul .links li a.focus{
+    font-weight: 500;
+}
+ul .links li a.focus::after{
     content: "";
     display: block;
-    width: 85%;
+    width: 47px;
     height: 3.5px;
     border-radius: 5px;
     background: linear-gradient(to right, #1BFFB6, #B61BFF);
