@@ -1,4 +1,5 @@
 ul .links{
+    position: relative;
     display: flex;
     width: 100%;
     max-width: 500px;
@@ -14,14 +15,19 @@ ul .links li{
     cursor: pointer;
     text-transform: uppercase;
     transition: .5s;
+
 }
 
-ul .focus-bar{
+ul .links .focus-bar{
+    position: absolute;
     display: block;
     height: 3.5px;
     border-radius: 5px;
     background: linear-gradient(to right, #1BFFB6, #B61BFF);
-    margin: 5px auto;
+    width: 47px;
+    left: 10px;
+    transition: .3s;
+    bottom: 2px;
 }
 
 ul .links li:hover{
@@ -30,7 +36,7 @@ ul .links li:hover{
 ul .links li a.focus{
     font-weight: 500;
 }
-ul .links li a.focus::after{
+/* ul .links li a.focus::after{
     content: "";
     display: block;
     width: 47px;
@@ -38,4 +44,4 @@ ul .links li a.focus::after{
     border-radius: 5px;
     background: linear-gradient(to right, #1BFFB6, #B61BFF);
     margin: 5px auto;
-}
+} */
