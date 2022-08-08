@@ -24,8 +24,8 @@ ul .links .focus-bar{
     height: 3.5px;
     border-radius: 5px;
     background: linear-gradient(to right, #1BFFB6, #B61BFF);
-    width: 47px;
-    left: 10px;
+    width: 35.25px;
+    left: 15.875px;
     transition: .3s;
     bottom: 2px;
 }

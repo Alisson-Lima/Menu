@@ -2,20 +2,18 @@ import {ItemList} from "../ItemList/"
 import { useState } from "react"
 import "./style.css"
 export function Menu(){
-    const [focusW, setFocusW] = useState()
     const [translateX, setTranslateX] = useState()
+    const [focusW, setFocusW] = useState()
     function verify(e){
         const event = e
-
         let n1 = event.target.offsetWidth
-        let n2 = (event.target.offsetWidth / 100) * 90
-        console.log(n1 - n2)
+        let n2 = (n1 / 100) * 75
         const move = event.target.offsetLeft + ((n1 - n2) / 2) + "px"
-        // Mover focus para o elemento
+        // Mover focus para o link
         setTranslateX(move)
         // Mudar largura do foco
         setFocusW(n2 + "px")
-        // Mudar foco do link
+        // Verificação do focus
         let focus = document.querySelector('.focus')
         if(focus == null){
             event.target.classList.add('focus')
